@@ -1,0 +1,39 @@
+<div class="grid-row">
+    <div class="tablet:grid-col-fill">
+        <div class="usa-step-indicator usa-step-indicator--counters-sm" aria-label="progress">
+            <ol class="usa-step-indicator__segments">
+                <li
+                    class="usa-step-indicator__segment @@if (step > 1 ) { usa-step-indicator__segment--complete } @@if (step === 1 ) { usa-step-indicator__segment--current }">
+                    <span class="usa-step-indicator__segment-label">Business Details</span>
+                </li>
+                <li
+                    class="usa-step-indicator__segment @@if (step > 2 ) { usa-step-indicator__segment--complete } @@if (step === 2 ) { usa-step-indicator__segment--current }">
+                    <span class="usa-step-indicator__segment-label">Business Financials</span>
+                </li>
+                <li
+                    class="usa-step-indicator__segment @@if (step > 3 ) { usa-step-indicator__segment--complete } @@if (step === 3 ) { usa-step-indicator__segment--current }">
+                    <span class="usa-step-indicator__segment-label">Personal Details
+                    </span>
+                </li>
+                <li
+                    class="usa-step-indicator__segment @@if (step > 4 ) { usa-step-indicator__segment--complete } @@if (step === 4 ) { usa-step-indicator__segment--current }">
+                    <span class="usa-step-indicator__segment-label">Funding Needs</span>
+                </li>
+                <li
+                    class="usa-step-indicator__segment @@if (step > 5 ) { usa-step-indicator__segment--complete } @@if (step === 5 ) { usa-step-indicator__segment--current }">
+                    <span class="usa-step-indicator__segment-label">Results</span>
+                </li>
+            </ol>
+            <div class="usa-step-indicator__header">
+                <h4 class="usa-step-indicator__heading">
+                    <span class="usa-step-indicator__heading-counter">
+                        <span class="usa-sr-only">Step</span>
+                        <span class="usa-step-indicator__current-step">@@step</span>
+                        <span class="usa-step-indicator__total-steps">of 5</span>
+                    </span>
+                    <span class="usa-step-indicator__heading-text">@@title</span>
+                </h4>
+            </div>
+        </div>
+    </div>
+</div>

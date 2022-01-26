@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SBA Direct Loan Prototype</title>
+    @@include('head.html')
+</head>
+
+<body>
+    @@include('header.html')
+
+    <main id="main-content">
+        <section id="landing-section" class="usa-section">
+            <div class="grid-container">
+                @@include('app-steps.html', {
+                "step": 1,
+                "title": "Small Business Details"
+                })
+                <div class="grid-row">
+                    <div class="grid-col-fill">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
