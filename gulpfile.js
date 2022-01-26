@@ -24,6 +24,7 @@ const del = require("del");
 const svgSprite = require("gulp-svg-sprite");
 const rename = require("gulp-rename");
 const connect = require('gulp-connect');
+const fileinclude = require('gulp-file-include');
 
 /*
 ----------------------------------------
@@ -86,6 +87,10 @@ gulp.task("copy-uswds-js", () => {
 
 gulp.task("copy-html", () => {
   return gulp.src(`${PROJECT_HTML_SRC}/*.html`)
+    .pipe(fileinclude({
+      prefix: '@@',
+      basepath: `${PROJECT_HTML_SRC}/partials`
+    }))
     .pipe(gulp.dest(`${HTML_DEST}`))
     .pipe(connect.reload());
 });
@@ -176,6 +181,13 @@ gulp.task("clean-sprite", function (cb) {
   return del.sync(`${IMG_DEST}/symbol`);
 });
 
+gulp.task('connect', function() {
+  connect.server({
+    root: 'dist',
+    livereload: true
+  });
+});
+
 gulp.task(
   "init",
   gulp.series(
@@ -188,16 +200,9 @@ gulp.task(
   )
 );
 
-gulp.task('connect', function() {
-  connect.server({
-    root: 'dist',
-    livereload: true
-  });
-});
-
 gulp.task("watch-source", function () {
   gulp.watch(`${PROJECT_SASS_SRC}/**/*.scss`, gulp.series("build-sass"));
-  gulp.watch(`${PROJECT_HTML_SRC}/*.html`, gulp.series("copy-html"));
+  gulp.watch(`${PROJECT_HTML_SRC}/**/*.html`, gulp.series("copy-html"));
 });
 
 gulp.task("watch", gulp.parallel("connect", gulp.series("build-sass", "copy-html", "watch-source")));
