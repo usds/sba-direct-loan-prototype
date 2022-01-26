@@ -40,6 +40,7 @@ PATHS
 // Project Sass source directory
 const PROJECT_SASS_SRC = "./assets/sass";
 const PROJECT_HTML_SRC = "./assets/html";
+const PROJECT_IMG_SRC = "./assets/img";
 
 // Images destination
 const IMG_DEST = "./dist/assets/img";
@@ -92,6 +93,12 @@ gulp.task("copy-html", () => {
       basepath: `${PROJECT_HTML_SRC}/partials`
     }))
     .pipe(gulp.dest(`${HTML_DEST}`))
+    .pipe(connect.reload());
+});
+
+gulp.task("copy-img", () => {
+  return gulp.src(`${PROJECT_IMG_SRC}/*.*`)
+    .pipe(gulp.dest(`${IMG_DEST}`))
     .pipe(connect.reload());
 });
 
@@ -203,9 +210,10 @@ gulp.task(
 gulp.task("watch-source", function () {
   gulp.watch(`${PROJECT_SASS_SRC}/**/*.scss`, gulp.series("build-sass"));
   gulp.watch(`${PROJECT_HTML_SRC}/**/*.html`, gulp.series("copy-html"));
+  gulp.watch(`${PROJECT_IMG_SRC}/**/*.*`, gulp.series("copy-img"));
 });
 
-gulp.task("watch", gulp.parallel("connect", gulp.series("build-sass", "copy-html", "watch-source")));
+gulp.task("watch", gulp.parallel("connect", gulp.series("build-sass", "copy-html", "copy-img", "watch-source")));
 
 gulp.task("default", gulp.series("watch"));
 
