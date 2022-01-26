@@ -203,6 +203,7 @@ gulp.task(
     "copy-uswds-images",
     "copy-uswds-js",
     "copy-html",
+    "copy-img",
     "build-sass"
   )
 );
