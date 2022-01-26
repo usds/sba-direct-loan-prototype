@@ -11,8 +11,9 @@
 </head>
 
 <body>
-    <script src="js/uswds.min.js"></script>
+    <script src="assets/js/uswds.min.js"></script>
 
+    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
     <section class="usa-banner" aria-label="Official government website">
         <div class="usa-accordion">
             <header class="usa-banner__header">
@@ -29,12 +30,12 @@
                         </p>
                     </div>
                     <button class="usa-accordion__button usa-banner__button" aria-expanded="false"
-                        aria-controls="gov-banner-default">
+                        aria-controls="gov-banner">
                         <span class="usa-banner__button-text">Here’s how you know</span>
                     </button>
                 </div>
             </header>
-            <div class="usa-banner__content usa-accordion__content" id="gov-banner-default">
+            <div class="usa-banner__content usa-accordion__content" id="gov-banner">
                 <div class="grid-row grid-gap-lg">
                     <div class="usa-banner__guidance tablet:grid-col-6">
                         <img class="usa-banner__icon usa-media-block__img" src="/assets/img/icon-dot-gov.svg" role="img"
@@ -43,8 +44,8 @@
                             <p>
                                 <strong> Official websites use .gov </strong>
                                 <br />
-                                A <strong>.gov</strong> website belongs to an official
-                                government organization in the United States.
+                                A <strong>.gov</strong> website belongs to an official government
+                                organization in the United States.
                             </p>
                         </div>
                     </div>
@@ -58,19 +59,15 @@
                                 A <strong>lock</strong> (
                                 <span class="icon-lock"><svg xmlns="http://www.w3.org/2000/svg" width="52" height="64"
                                         viewBox="0 0 52 64" class="usa-banner__lock-image" role="img"
-                                        aria-labelledby="banner-lock-title-default banner-lock-description-default"
-                                        focusable="false">
-                                        <title id="banner-lock-title-default">Lock</title>
-                                        <desc id="banner-lock-description-default">
-                                            A locked padlock
-                                        </desc>
+                                        aria-labelledby="banner-lock-title banner-lock-description" focusable="false">
+                                        <title id="banner-lock-title">Lock</title>
+                                        <desc id="banner-lock-description">A locked padlock</desc>
                                         <path fill="#000000" fill-rule="evenodd"
                                             d="M26 0c10.493 0 19 8.507 19 19v9h3a4 4 0 0 1 4 4v28a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V32a4 4 0 0 1 4-4h3v-9C7 8.507 15.507 0 26 0zm0 8c-5.979 0-10.843 4.77-10.996 10.712L15 19v9h22v-9c0-6.075-4.925-11-11-11z" />
-                                    </svg>
-                                </span>
-                                ) or <strong>https://</strong> means you’ve safely connected
-                                to the .gov website. Share sensitive information only on
-                                official, secure websites.
+                                    </svg></span>
+                                ) or <strong>https://</strong> means you’ve safely connected to
+                                the .gov website. Share sensitive information only on official,
+                                secure websites.
                             </p>
                         </div>
                     </div>
@@ -78,6 +75,62 @@
             </div>
         </div>
     </section>
+
+    <div class="usa-overlay"></div>
+    <header class="usa-header usa-header--basic">
+        <div class="usa-nav-container">
+            <div class="usa-navbar">
+                <div class="usa-logo" id="basic-logo">
+                    <em class="usa-logo__text">
+                        <a href="javascript:void(0)" title="SBA Direct Lending">
+                            SBA Direct Lending
+                        </a>
+                    </em>
+                </div>
+                <button class="usa-menu-btn">Menu</button>
+            </div>
+            <nav aria-label="Primary navigation" class="usa-nav">
+                <button class="usa-nav__close">
+                    <img src="/assets/img/usa-icons/close.svg" role="img" alt="Close" />
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section id="landing-section" class="usa-section">
+            <div class="grid-container">
+                <h2 class="font-heading-2xl">Find a small business loan that works for you.</h2>
+                <h3 class="font-body-lg">This SBA Loan websites helps match you with the best funding options for your
+                    business.</h3>
+                <p class="font-body-lg line-height-sans-3">
+                    Whether you are looking to start or expand your business, the Small Business Administration (SBA)
+                    may be able to help. With a variety of loan programs, we offer ways to find funding for natural
+                    disasters, get matched with qualifying lending partners, or to receive funding directly from us. 
+                </p>
+                <p class="font-body-md">
+                    To find out if you are eligible, or to begin your application, please click below. 
+                </p>
+                <ul class="usa-button-group">
+                    <li class="usa-button-group__item">
+                        <a class="usa-button usa-button--accent-cool usa-button--big padding-3"
+                            href="javascript:void(0);">Check Your Eligibility</a>
+                    </li>
+                    <li class="usa-button-group__item">
+                        <a class="usa-button usa-button--big padding-3" href="javascript:void(0);">Begin Application</a>
+                    </li>
+                    <li class="usa-button-group__item">
+                        <a class="usa-button usa-button--outline usa-button--big padding-3"
+                            href="javascript:void(0);">FAQ</a>
+                    </li>
+                </ul>
+                <p class="font-body-md">
+                    To find out more about the variety of loan programs and options available, please <a href="">click
+                        here</a>.
+                </p>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
