@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SBA Direct Loan Prototype</title>
+    @@include('head.html')
+</head>
+
+<body>
+    @@include('header.html')
+
+    <main id="main-content">
+        <section id="app-section" class="usa-section">
+            <div class="grid-container">
+                @@include('app-steps.html', {
+                "step": 3,
+                "title": "Owner's Personal Details"
+                })
+
+                <div class="grid-row">
+                    <div class="grid-col-fill">
+                        <form class="usa-form usa-form--large">
+                            
+                        </form>
+                    </div>
+                </div>
+
+                <div class="grid-row">
+                    <div class="grid-col-fill">
+                        <ul class="usa-button-group margin-y-4">
+                            <li class="usa-button-group__item">
+                                <a class="usa-button usa-button usa-button--big" href="app-pg-4.html">Next</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    @@include('footer.html')
+</body>
+
+</html>
