@@ -41,19 +41,19 @@ const PROJECT_SASS_SRC = "./assets/sass";
 const PROJECT_HTML_SRC = "./assets/html";
 
 // Images destination
-const IMG_DEST = "./dist/img";
+const IMG_DEST = "./dist/assets/img";
 
 // Fonts destination
-const FONTS_DEST = "./dist/fonts";
+const FONTS_DEST = "./dist/assets/fonts";
 
 // Javascript destination
-const JS_DEST = "./dist/js";
+const JS_DEST = "./dist/assets/js";
 
 // HTML destination
 const HTML_DEST = "./dist";
 
 // Compiled CSS destination
-const CSS_DEST = "./dist/css";
+const CSS_DEST = "./dist/assets/css";
 
 // Site CSS destination
 // Like the _site/assets/css directory in Jekyll, if necessary.
