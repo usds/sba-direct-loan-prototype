@@ -23,6 +23,7 @@ const uswds = require("./node_modules/uswds-gulp/config/uswds");
 const del = require("del");
 const svgSprite = require("gulp-svg-sprite");
 const rename = require("gulp-rename");
+const connect = require('gulp-connect');
 
 /*
 ----------------------------------------
@@ -84,7 +85,9 @@ gulp.task("copy-uswds-js", () => {
 });
 
 gulp.task("copy-html", () => {
-  return gulp.src(`${PROJECT_HTML_SRC}/*.html`).pipe(gulp.dest(`${HTML_DEST}`));
+  return gulp.src(`${PROJECT_HTML_SRC}/*.html`)
+    .pipe(gulp.dest(`${HTML_DEST}`))
+    .pipe(connect.reload());
 });
 
 gulp.task("build-sass", function (done) {
@@ -116,6 +119,7 @@ gulp.task("build-sass", function (done) {
       // uncomment the next line if necessary for Jekyll to build properly
       //.pipe(gulp.dest(`${SITE_CSS_DEST}`))
       .pipe(gulp.dest(`${CSS_DEST}`))
+      .pipe(connect.reload())
   );
 });
 
@@ -184,12 +188,19 @@ gulp.task(
   )
 );
 
+gulp.task('connect', function() {
+  connect.server({
+    root: 'dist',
+    livereload: true
+  });
+});
+
 gulp.task("watch-source", function () {
   gulp.watch(`${PROJECT_SASS_SRC}/**/*.scss`, gulp.series("build-sass"));
   gulp.watch(`${PROJECT_HTML_SRC}/*.html`, gulp.series("copy-html"));
 });
 
-gulp.task("watch", gulp.series("build-sass", "watch-source"));
+gulp.task("watch", gulp.parallel("connect", gulp.series("build-sass", "copy-html", "watch-source")));
 
 gulp.task("default", gulp.series("watch"));
 
