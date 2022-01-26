@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>SBA Direct Loan Prototype</title>
+    <title>Eligibility - SBA Direct Loan Prototype</title>
     <script src="assets/js/uswds-init.min.js"></script>
     <link rel="stylesheet" href="assets/css/styles.css" />
     <link rel="stylesheet" href="assets/css/usdws-settings.css" />
@@ -115,35 +115,89 @@
     </header>
 
     <main id="main-content">
-        <section id="landing-section" class="usa-section">
+        <section id="eligibility-section" class="usa-section">
             <div class="grid-container">
-                <h2 class="font-heading-2xl">Find a small business loan that works for you.</h2>
-                <h3 class="font-body-lg">This SBA Loan websites helps match you with the best funding options for your
-                    business.</h3>
-                <p class="font-body-lg line-height-sans-3">
-                    Whether you are looking to start or expand your business, the Small Business Administration (SBA)
-                    may be able to help. With a variety of loan programs, we offer ways to find funding for natural
-                    disasters, get matched with qualifying lending partners, or to receive funding directly from us. 
-                </p>
-                <p class="font-body-md">
-                    To find out if you are eligible, or to begin your application, please click below. 
-                </p>
-                <ul class="usa-button-group">
-                    <li class="usa-button-group__item">
-                        <a class="usa-button usa-button--accent-cool usa-button--big padding-3"
-                            href="eligibility-option-2.html">Check Your Eligibility</a>
+                <p class="font-heading-xl">You are <strong>eligible</strong> for this program if your business...</p>
+                <ul class="usa-icon-list usa-icon-list--size-lg">
+                    <li class="usa-icon-list__item">
+                        <div class="usa-icon-list__icon text-green">
+                            <svg class="usa-icon" aria-hidden="true" role="img">
+                                <use xlink:href="/assets/img/sprite.svg#check_circle"></use>
+                            </svg>
+                        </div>
+                        <div class="usa-icon-list__content">
+                            Is a small business as defined by the SBA industry guidelines
+                        </div>
                     </li>
-                    <li class="usa-button-group__item">
-                        <a class="usa-button usa-button--big padding-3" href="javascript:void(0);">Begin Application</a>
+                    <li class="usa-icon-list__item">
+                        <div class="usa-icon-list__icon text-green">
+                            <svg class="usa-icon" aria-hidden="true" role="img">
+                                <use xlink:href="/assets/img/sprite.svg#check_circle"></use>
+                            </svg>
+                        </div>
+                        <div class="usa-icon-list__content">Is registered in the US as a sole proprietorship, LLC,
+                            Corporation, or B-Corp. <em>Nonprofits and Trusts are not currently supported at this
+                                time.</em></div>
                     </li>
-                    <li class="usa-button-group__item">
-                        <a class="usa-button usa-button--outline usa-button--big padding-3" href="index.html">FAQ</a>
+                    <li class="usa-icon-list__item">
+                        <div class="usa-icon-list__icon text-green">
+                            <svg class="usa-icon" aria-hidden="true" role="img">
+                                <use xlink:href="/assets/img/sprite.svg#check_circle"></use>
+                            </svg>
+                        </div>
+                        <div class="usa-icon-list__content">You are looking for funding under $100,000.</div>
+                    </li>
+                    <li class="usa-icon-list__item">
+                        <div class="usa-icon-list__icon text-green">
+                            <svg class="usa-icon" aria-hidden="true" role="img">
+                                <use xlink:href="/assets/img/sprite.svg#check_circle"></use>
+                            </svg>
+                        </div>
+                        <div class="usa-icon-list__content">You are looking for funding for: working capital, equipment,
+                            payroll, starting a business, or disaster funds.</div>
+                    </li>
+                    <li class="usa-icon-list__item">
+                        <div class="usa-icon-list__icon text-green">
+                            <svg class="usa-icon" aria-hidden="true" role="img">
+                                <use xlink:href="/assets/img/sprite.svg#check_circle"></use>
+                            </svg>
+                        </div>
+                        <div class="usa-icon-list__content">While having a bankruptcy or poor credit may limit what we
+                            can offer, they currently do not exclude you from this program!</div>
                     </li>
                 </ul>
-                <p class="font-body-md">
-                    To find out more about the variety of loan programs and options available, please <a href="">click
-                        here</a>.
-                </p>
+
+                <p class="font-heading-xl margin-top-8">You are <strong>ineligible</strong> for this program if your
+                    business...</p>
+                <ul class="usa-icon-list usa-icon-list--size-lg">
+                    <li class="usa-icon-list__item">
+                        <div class="usa-icon-list__icon text-red">
+                            <svg class="usa-icon" aria-hidden="true" role="img">
+                                <use xlink:href="/assets/img/sprite.svg#cancel"></use>
+                            </svg>
+                        </div>
+                        <div class="usa-icon-list__content">Firms engaged in activities that are prohibited by federal
+                            law or applicable law in the jurisdiction where the business is located or conducted.</div>
+                    </li>
+                    <li class="usa-icon-list__item">
+                        <div class="usa-icon-list__icon text-red">
+                            <svg class="usa-icon" aria-hidden="true" role="img">
+                                <use xlink:href="/assets/img/sprite.svg#cancel"></use>
+                            </svg>
+                        </div>
+                        <div class="usa-icon-list__content">Businesses in the following industries are currently not
+                            eligible:
+                            <ul class="usa-list padding-x-6 padding-y-2">
+                                <li>Corporate-owned franchises</li>
+                                <li>Pay day loan stores</li>
+                                <li>Pawn shops</li>
+                                <li>Astrology, palm reading</li>
+                                <li>Adult bookstores, strip clubs</li>
+                                <li>Track waging facilities</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </section>
     </main>
