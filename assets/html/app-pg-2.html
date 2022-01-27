@@ -20,7 +20,41 @@
                 <div class="grid-row">
                     <div class="grid-col-fill">
                         <form class="usa-form usa-form--large">
+                            <fieldset class="usa-fieldset">
+                                @@include('input-text.html', {
+                                    "id": "business-revenue",
+                                    "title": "What was your annual revenue last year?",
+                                    "size": "md"
+                                })
+
+                                @@include('input-text.html', {
+                                    "id": "business-profit",
+                                    "title": "What was your annual profit last year?",
+                                    "size": "md"
+                                })
+                            </fieldset>
                             
+                            <fieldset class="usa-fieldset margin-top-3">
+                                @@include('input-radio.html', {
+                                    "id": "business-collateral",
+                                    "title": "Do you have collateral for taking out a loan?",
+                                    "options": [
+                                        "Yes",
+                                        "No"
+                                    ]
+                                })
+                            </fieldset>
+
+                            <fieldset class="usa-fieldset margin-top-3">
+                                @@include('input-radio.html', {
+                                    "id": "business-seasonal",
+                                    "title": "Do you do business seasonally?",
+                                    "options": [
+                                        "Yes",
+                                        "No"
+                                    ]
+                                })
+                            </fieldset>
                         </form>
                     </div>
                 </div>
