@@ -1,0 +1,7 @@
+<label class="usa-label text-bold" for="">@@title <abbr title="required" class="usa-hint usa-hint--required">*</abbr></label>
+<select class="usa-select usa-input--@@size" name="@@id" id="@@id">
+    <option value>- Select -</option>
+    @@for (var i = 0; i < options.length; i++) {
+        <option value="value_`+i+`">`+options[i]+`</option>
+    }
+</select>
