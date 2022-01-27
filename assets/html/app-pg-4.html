@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SBA Direct Loan Prototype</title>
+    @@include('head.html')
+</head>
+
+<body>
+    @@include('header.html')
+
+    <main id="main-content">
+        <section id="app-section" class="usa-section">
+            <div class="grid-container">
+                @@include('app-steps.html', {
+                "step": 4,
+                "title": "Funding Request"
+                })
+
+                <div class="grid-row">
+                    <div class="grid-col-fill">
+                        <form class="usa-form usa-form--large">
+                            <fieldset class="usa-fieldset">
+                                @@include('input-select.html', {
+                                    "id": "funding-why",
+                                    "title": "Why are you looking for funding?",
+                                    "size": "2xl",
+                                    "options": [
+                                        "Working Capital",
+                                        "Start a business",
+                                        "Acquire a business",
+                                        "Purchase inventory",
+                                        "Purchase machinery or equipment",
+                                        "Real Estate Acquisition or Improvements",
+                                        "Refinance existing debts",
+                                        "Make payroll",
+                                        "Other"
+                                    ]
+                                })
+
+                                @@include('input-select.html', {
+                                    "id": "funding-amount",
+                                    "title": "How much are you looking for?",
+                                    "size": "xl",
+                                    "options": [
+                                        "Under $20,000",
+                                        "Between $20,000 and $50,000",
+                                        "Between $50,000 and $150,000",
+                                        "Over $150,000"
+                                    ]
+                                })
+
+                                @@include('input-select.html', {
+                                    "id": "funding-speed",
+                                    "title": "How quickly do you need funding?",
+                                    "size": "xl",
+                                    "options": [
+                                        "As soon as possible",
+                                        "Within 2 weeks",
+                                        "In the next month",
+                                        "Within next 3 months",
+                                        "In the next 6 months",
+                                        "Unsure"
+                                    ]
+                                })
+                            </fieldset>
+
+                            <fieldset class="usa-fieldset margin-top-3">
+                                @@include('input-radio.html', {
+                                    "id": "funding-need",
+                                    "title": "Which is more important to you?",
+                                    "options": [
+                                        "Speed of funds",
+                                        "Cost of funds",
+                                        "Amount of funds"
+                                    ]
+                                })
+                            </fieldset>
+
+                            <fieldset class="usa-fieldset margin-top-3">
+                                @@include('input-radio.html', {
+                                    "id": "funding-disaster",
+                                    "title": "Are you applying for disaster relief?",
+                                    "options": [
+                                        "Yes",
+                                        "No"
+                                    ]
+                                })
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="grid-row">
+                    <div class="grid-col-fill">
+                        <ul class="usa-button-group margin-y-4">
+                            <li class="usa-button-group__item">
+                                <a class="usa-button usa-button usa-button--big" href="app-pg-4.html">Next</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    @@include('footer.html')
+</body>
+
+</html>
