@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SBA Direct Loan Prototype</title>
+    @@include('head.html')
+</head>
+
+<body>
+    @@include('header.html')
+
+    <main id="main-content">
+        <section id="app-section" class="usa-section">
+            <div class="grid-container">
+                @@include('app-steps.html', {
+                "step": 5,
+                "title": "Congratulations!"
+                })
+
+                <div class="grid-row grid-gap-4">
+                    <div class="tablet:grid-col-4">
+                        <p class="font-body-md line-height-sans-3 text-bold">
+                            Based on the information you provided us, we've found potential loan offerings for you.
+                        </p>
+                        <p class="font-body-md line-height-sans-3">
+                            Please review the options to the right. You can click on "Learn More" to find out more about
+                            the institution and terms of the loans.
+                        </p>
+                        <p class="font-body-md line-height-sans-3">
+                            This application is automatically saved and available to you for 60 days. After 60 days, you
+                            will have to complete the form again.
+                        </p>
+                    </div>
+                    <div class="tablet:grid-col-8">
+                        <div class="usa-table-container--scrollable" tabindex="0">
+                            <table class="usa-table usa-table--compact">
+                                <thead>
+                                    <tr>
+                                        <th scope="col"></th>
+                                        <th scope="col" class="text-right">APR</th>
+                                        <th scope="col" class="text-right">Loan Term</th>
+                                        <th scope="col" class="text-right">Payment Frequency</th>
+                                        <th scope="col" class="text-right">Origination Fee</th>
+                                        <th scope="col" class="text-right"></th>
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <th scope="row">SBA</th>
+                                    <td class="font-mono-sm text-tabular text-right">0%</td>
+                                    <td class="font-mono-sm text-tabular text-right">5 years</td>
+                                    <td class="font-mono-sm text-tabular text-right">Bi-weekly</td>
+                                    <td class="font-mono-sm text-tabular text-right">$500</td>
+                                    <td class="font-mono-sm text-tabular text-right">
+                                        <ul class="usa-button-group">
+                                            <li class="usa-button-group__item">
+                                                <a class="usa-button usa-button--secondary" href="">Learn More</a>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Partner</th>
+                                    <td class="font-mono-sm text-tabular text-right">4%</td>
+                                    <td class="font-mono-sm text-tabular text-right">6 years</td>
+                                    <td class="font-mono-sm text-tabular text-right">Monthly</td>
+                                    <td class="font-mono-sm text-tabular text-right">3%</td>
+                                    <td class="font-mono-sm text-tabular text-right">
+                                        <ul class="usa-button-group">
+                                            <li class="usa-button-group__item">
+                                                <a class="usa-button usa-button--secondary" href="">Learn More</a>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Partner</th>
+                                    <td class="font-mono-sm text-tabular text-right">5%</td>
+                                    <td class="font-mono-sm text-tabular text-right">5 years</td>
+                                    <td class="font-mono-sm text-tabular text-right">Monthly</td>
+                                    <td class="font-mono-sm text-tabular text-right">2%</td>
+                                    <td class="font-mono-sm text-tabular text-right">
+                                        <ul class="usa-button-group">
+                                            <li class="usa-button-group__item">
+                                                <a class="usa-button usa-button--secondary" href="">Learn More</a>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-row">
+                    <div class="grid-col-fill">
+                        <ul class="usa-button-group margin-y-4">
+                            <li class="usa-button-group__item">
+                                <a class="usa-button usa-button--outline usa-button--big" href="">Questions? Find SBA
+                                    support near you.</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    @@include('footer.html')
+</body>
+
+</html>
