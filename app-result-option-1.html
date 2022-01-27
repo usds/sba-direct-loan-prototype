@@ -131,16 +131,16 @@
                     <span class="usa-step-indicator__segment-label">Business Financials</span>
                 </li>
                 <li
-                    class="usa-step-indicator__segment   usa-step-indicator__segment--current ">
+                    class="usa-step-indicator__segment  usa-step-indicator__segment--complete  ">
                     <span class="usa-step-indicator__segment-label">Personal Details
                     </span>
                 </li>
                 <li
-                    class="usa-step-indicator__segment  ">
+                    class="usa-step-indicator__segment  usa-step-indicator__segment--complete  ">
                     <span class="usa-step-indicator__segment-label">Funding Needs</span>
                 </li>
                 <li
-                    class="usa-step-indicator__segment  ">
+                    class="usa-step-indicator__segment   usa-step-indicator__segment--current ">
                     <span class="usa-step-indicator__segment-label">Results</span>
                 </li>
             </ol>
@@ -148,97 +148,87 @@
                 <h4 class="usa-step-indicator__heading">
                     <span class="usa-step-indicator__heading-counter">
                         <span class="usa-sr-only">Step</span>
-                        <span class="usa-step-indicator__current-step">3</span>
+                        <span class="usa-step-indicator__current-step">5</span>
                         <span class="usa-step-indicator__total-steps">of 5</span>
                     </span>
-                    <span class="usa-step-indicator__heading-text">Owner's Personal Details</span>
+                    <span class="usa-step-indicator__heading-text">Congratulations!</span>
                 </h4>
             </div>
         </div>
     </div>
 </div>
 
-                <div class="grid-row">
-                    <div class="grid-col-fill">
-                        <form class="usa-form usa-form--large">
-                            <fieldset class="usa-fieldset">
-                                <label class="usa-label text-bold" for="owner-name">
-    Owner's Name
-    <abbr title="required" class="usa-hint usa-hint--required">*</abbr>
-</label>
-<input class="usa-input usa-input--3xl" id="owner-name" name="owner-name" type="text" required aria-required="true" />
-                            </fieldset>
-
-                            <fieldset class="usa-fieldset margin-top-3">
-                                <legend class="usa-legend text-bold">
-    Are you the owner? <abbr title="required" class="usa-hint usa-hint--required">*</abbr>
-</legend>
-
-    <div class="usa-radio">
-        <input class="usa-radio__input" id="owner-submitting_option_0" type="radio" name="owner-submitting" value="owner-submitting_option_0" />
-        <label class="usa-radio__label" for="owner-submitting_option_0">Yes</label>
-    </div>
-
-    <div class="usa-radio">
-        <input class="usa-radio__input" id="owner-submitting_option_1" type="radio" name="owner-submitting" value="owner-submitting_option_1" />
-        <label class="usa-radio__label" for="owner-submitting_option_1">No</label>
-    </div>
-
-                            </fieldset>
-
-                            <fieldset class="usa-fieldset margin-top-3">
-                                <legend class="usa-legend text-bold">
-    Has the owner had a prior bankruptcy? <abbr title="required" class="usa-hint usa-hint--required">*</abbr>
-</legend>
-
-    <div class="usa-radio">
-        <input class="usa-radio__input" id="owner-bankruptcy_option_0" type="radio" name="owner-bankruptcy" value="owner-bankruptcy_option_0" />
-        <label class="usa-radio__label" for="owner-bankruptcy_option_0">Yes</label>
-    </div>
-
-    <div class="usa-radio">
-        <input class="usa-radio__input" id="owner-bankruptcy_option_1" type="radio" name="owner-bankruptcy" value="owner-bankruptcy_option_1" />
-        <label class="usa-radio__label" for="owner-bankruptcy_option_1">No</label>
-    </div>
-
-                            </fieldset>
-
-                            <fieldset class="usa-fieldset">
-                                <div class="usa-form-group">
-    <label class="usa-label text-bold" id="owner-bday-label" for="owner-bday">
-        Owner's Date of Birth
-        <abbr title="required" class="usa-hint usa-hint--required">*</abbr>
-    </label>
-    <div class="usa-hint" id="owner-bday-hint">mm/dd/yyyy</div>
-    <div class="usa-date-picker">
-        <input class="usa-input" id="owner-bday" name="owner-bday type="text" aria-labelledby="owner-bday-label" aria-describedby="owner-bday-hint" />
-    </div>
-</div>
-
-                                <label class="usa-label text-bold" for="owner-ssn">
-    Owner's SSN
-    <abbr title="required" class="usa-hint usa-hint--required">*</abbr>
-</label>
-<input class="usa-input usa-input--md" id="owner-ssn" name="owner-ssn" type="text" required aria-required="true" />
-                            </fieldset>
-
-                            <fieldset class="usa-fieldset margin-top-3">
-                                <legend class="usa-legend text-bold">
-    Is the owner a veteran or veteran's spouse? <abbr title="required" class="usa-hint usa-hint--required">*</abbr>
-</legend>
-
-    <div class="usa-radio">
-        <input class="usa-radio__input" id="owner-veteran_option_0" type="radio" name="owner-veteran" value="owner-veteran_option_0" />
-        <label class="usa-radio__label" for="owner-veteran_option_0">Yes</label>
-    </div>
-
-    <div class="usa-radio">
-        <input class="usa-radio__input" id="owner-veteran_option_1" type="radio" name="owner-veteran" value="owner-veteran_option_1" />
-        <label class="usa-radio__label" for="owner-veteran_option_1">No</label>
-    </div>
-
-                            </fieldset>
-                        </form>
+                <div class="grid-row grid-gap-4">
+                    <div class="tablet:grid-col-4">
+                        <p class="font-body-md line-height-sans-3 text-bold">
+                            Based on the information you provided us, we've found potential loan offerings for you.
+                        </p>
+                        <p class="font-body-md line-height-sans-3">
+                            Please review the options to the right. You can click on "Learn More" to find out more about
+                            the institution and terms of the loans.
+                        </p>
+                        <p class="font-body-md line-height-sans-3">
+                            This application is automatically saved and available to you for 60 days. After 60 days, you
+                            will have to complete the form again.
+                        </p>
+                    </div>
+                    <div class="tablet:grid-col-8">
+                        <div class="usa-table-container--scrollable" tabindex="0">
+                            <table class="usa-table usa-table--compact">
+                                <thead>
+                                    <tr>
+                                        <th scope="col"></th>
+                                        <th scope="col" class="text-right">APR</th>
+                                        <th scope="col" class="text-right">Loan Term</th>
+                                        <th scope="col" class="text-right">Payment Frequency</th>
+                                        <th scope="col" class="text-right">Origination Fee</th>
+                                        <th scope="col" class="text-right"></th>
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <th scope="row">SBA</th>
+                                    <td class="font-mono-sm text-tabular text-right">0%</td>
+                                    <td class="font-mono-sm text-tabular text-right">5 years</td>
+                                    <td class="font-mono-sm text-tabular text-right">Bi-weekly</td>
+                                    <td class="font-mono-sm text-tabular text-right">$500</td>
+                                    <td class="font-mono-sm text-tabular text-right">
+                                        <ul class="usa-button-group">
+                                            <li class="usa-button-group__item">
+                                                <a class="usa-button usa-button--secondary" href="">Learn More</a>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Partner</th>
+                                    <td class="font-mono-sm text-tabular text-right">4%</td>
+                                    <td class="font-mono-sm text-tabular text-right">6 years</td>
+                                    <td class="font-mono-sm text-tabular text-right">Monthly</td>
+                                    <td class="font-mono-sm text-tabular text-right">3%</td>
+                                    <td class="font-mono-sm text-tabular text-right">
+                                        <ul class="usa-button-group">
+                                            <li class="usa-button-group__item">
+                                                <a class="usa-button usa-button--secondary" href="">Learn More</a>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Partner</th>
+                                    <td class="font-mono-sm text-tabular text-right">5%</td>
+                                    <td class="font-mono-sm text-tabular text-right">5 years</td>
+                                    <td class="font-mono-sm text-tabular text-right">Monthly</td>
+                                    <td class="font-mono-sm text-tabular text-right">2%</td>
+                                    <td class="font-mono-sm text-tabular text-right">
+                                        <ul class="usa-button-group">
+                                            <li class="usa-button-group__item">
+                                                <a class="usa-button usa-button--secondary" href="">Learn More</a>
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
                     </div>
                 </div>
 
@@ -246,7 +236,8 @@
                     <div class="grid-col-fill">
                         <ul class="usa-button-group margin-y-4">
                             <li class="usa-button-group__item">
-                                <a class="usa-button usa-button usa-button--big" href="app-pg-4.html">Next</a>
+                                <a class="usa-button usa-button--outline usa-button--big" href="">Questions? Find SBA
+                                    support near you.</a>
                             </li>
                         </ul>
                     </div>

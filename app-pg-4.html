@@ -131,12 +131,12 @@
                     <span class="usa-step-indicator__segment-label">Business Financials</span>
                 </li>
                 <li
-                    class="usa-step-indicator__segment   usa-step-indicator__segment--current ">
+                    class="usa-step-indicator__segment  usa-step-indicator__segment--complete  ">
                     <span class="usa-step-indicator__segment-label">Personal Details
                     </span>
                 </li>
                 <li
-                    class="usa-step-indicator__segment  ">
+                    class="usa-step-indicator__segment   usa-step-indicator__segment--current ">
                     <span class="usa-step-indicator__segment-label">Funding Needs</span>
                 </li>
                 <li
@@ -148,10 +148,10 @@
                 <h4 class="usa-step-indicator__heading">
                     <span class="usa-step-indicator__heading-counter">
                         <span class="usa-sr-only">Step</span>
-                        <span class="usa-step-indicator__current-step">3</span>
+                        <span class="usa-step-indicator__current-step">4</span>
                         <span class="usa-step-indicator__total-steps">of 5</span>
                     </span>
-                    <span class="usa-step-indicator__heading-text">Owner's Personal Details</span>
+                    <span class="usa-step-indicator__heading-text">Funding Request</span>
                 </h4>
             </div>
         </div>
@@ -162,79 +162,98 @@
                     <div class="grid-col-fill">
                         <form class="usa-form usa-form--large">
                             <fieldset class="usa-fieldset">
-                                <label class="usa-label text-bold" for="owner-name">
-    Owner's Name
-    <abbr title="required" class="usa-hint usa-hint--required">*</abbr>
-</label>
-<input class="usa-input usa-input--3xl" id="owner-name" name="owner-name" type="text" required aria-required="true" />
+                                <label class="usa-label text-bold" for="">Why are you looking for funding? <abbr title="required" class="usa-hint usa-hint--required">*</abbr></label>
+<select class="usa-select usa-input--2xl" name="funding-why" id="funding-why">
+    <option value>- Select -</option>
+    
+        <option value="value_0">Working Capital</option>
+    
+        <option value="value_1">Start a business</option>
+    
+        <option value="value_2">Acquire a business</option>
+    
+        <option value="value_3">Purchase inventory</option>
+    
+        <option value="value_4">Purchase machinery or equipment</option>
+    
+        <option value="value_5">Real Estate Acquisition or Improvements</option>
+    
+        <option value="value_6">Refinance existing debts</option>
+    
+        <option value="value_7">Make payroll</option>
+    
+        <option value="value_8">Other</option>
+    
+</select>
+
+                                <label class="usa-label text-bold" for="">How much are you looking for? <abbr title="required" class="usa-hint usa-hint--required">*</abbr></label>
+<select class="usa-select usa-input--xl" name="funding-amount" id="funding-amount">
+    <option value>- Select -</option>
+    
+        <option value="value_0">Under $20,000</option>
+    
+        <option value="value_1">Between $20,000 and $50,000</option>
+    
+        <option value="value_2">Between $50,000 and $150,000</option>
+    
+        <option value="value_3">Over $150,000</option>
+    
+</select>
+
+                                <label class="usa-label text-bold" for="">How quickly do you need funding? <abbr title="required" class="usa-hint usa-hint--required">*</abbr></label>
+<select class="usa-select usa-input--xl" name="funding-speed" id="funding-speed">
+    <option value>- Select -</option>
+    
+        <option value="value_0">As soon as possible</option>
+    
+        <option value="value_1">Within 2 weeks</option>
+    
+        <option value="value_2">In the next month</option>
+    
+        <option value="value_3">Within next 3 months</option>
+    
+        <option value="value_4">In the next 6 months</option>
+    
+        <option value="value_5">Unsure</option>
+    
+</select>
                             </fieldset>
 
                             <fieldset class="usa-fieldset margin-top-3">
                                 <legend class="usa-legend text-bold">
-    Are you the owner? <abbr title="required" class="usa-hint usa-hint--required">*</abbr>
+    Which is more important to you? <abbr title="required" class="usa-hint usa-hint--required">*</abbr>
 </legend>
 
     <div class="usa-radio">
-        <input class="usa-radio__input" id="owner-submitting_option_0" type="radio" name="owner-submitting" value="owner-submitting_option_0" />
-        <label class="usa-radio__label" for="owner-submitting_option_0">Yes</label>
+        <input class="usa-radio__input" id="funding-need_option_0" type="radio" name="funding-need" value="funding-need_option_0" />
+        <label class="usa-radio__label" for="funding-need_option_0">Speed of funds</label>
     </div>
 
     <div class="usa-radio">
-        <input class="usa-radio__input" id="owner-submitting_option_1" type="radio" name="owner-submitting" value="owner-submitting_option_1" />
-        <label class="usa-radio__label" for="owner-submitting_option_1">No</label>
+        <input class="usa-radio__input" id="funding-need_option_1" type="radio" name="funding-need" value="funding-need_option_1" />
+        <label class="usa-radio__label" for="funding-need_option_1">Cost of funds</label>
+    </div>
+
+    <div class="usa-radio">
+        <input class="usa-radio__input" id="funding-need_option_2" type="radio" name="funding-need" value="funding-need_option_2" />
+        <label class="usa-radio__label" for="funding-need_option_2">Amount of funds</label>
     </div>
 
                             </fieldset>
 
                             <fieldset class="usa-fieldset margin-top-3">
                                 <legend class="usa-legend text-bold">
-    Has the owner had a prior bankruptcy? <abbr title="required" class="usa-hint usa-hint--required">*</abbr>
+    Are you applying for disaster relief? <abbr title="required" class="usa-hint usa-hint--required">*</abbr>
 </legend>
 
     <div class="usa-radio">
-        <input class="usa-radio__input" id="owner-bankruptcy_option_0" type="radio" name="owner-bankruptcy" value="owner-bankruptcy_option_0" />
-        <label class="usa-radio__label" for="owner-bankruptcy_option_0">Yes</label>
+        <input class="usa-radio__input" id="funding-disaster_option_0" type="radio" name="funding-disaster" value="funding-disaster_option_0" />
+        <label class="usa-radio__label" for="funding-disaster_option_0">Yes</label>
     </div>
 
     <div class="usa-radio">
-        <input class="usa-radio__input" id="owner-bankruptcy_option_1" type="radio" name="owner-bankruptcy" value="owner-bankruptcy_option_1" />
-        <label class="usa-radio__label" for="owner-bankruptcy_option_1">No</label>
-    </div>
-
-                            </fieldset>
-
-                            <fieldset class="usa-fieldset">
-                                <div class="usa-form-group">
-    <label class="usa-label text-bold" id="owner-bday-label" for="owner-bday">
-        Owner's Date of Birth
-        <abbr title="required" class="usa-hint usa-hint--required">*</abbr>
-    </label>
-    <div class="usa-hint" id="owner-bday-hint">mm/dd/yyyy</div>
-    <div class="usa-date-picker">
-        <input class="usa-input" id="owner-bday" name="owner-bday type="text" aria-labelledby="owner-bday-label" aria-describedby="owner-bday-hint" />
-    </div>
-</div>
-
-                                <label class="usa-label text-bold" for="owner-ssn">
-    Owner's SSN
-    <abbr title="required" class="usa-hint usa-hint--required">*</abbr>
-</label>
-<input class="usa-input usa-input--md" id="owner-ssn" name="owner-ssn" type="text" required aria-required="true" />
-                            </fieldset>
-
-                            <fieldset class="usa-fieldset margin-top-3">
-                                <legend class="usa-legend text-bold">
-    Is the owner a veteran or veteran's spouse? <abbr title="required" class="usa-hint usa-hint--required">*</abbr>
-</legend>
-
-    <div class="usa-radio">
-        <input class="usa-radio__input" id="owner-veteran_option_0" type="radio" name="owner-veteran" value="owner-veteran_option_0" />
-        <label class="usa-radio__label" for="owner-veteran_option_0">Yes</label>
-    </div>
-
-    <div class="usa-radio">
-        <input class="usa-radio__input" id="owner-veteran_option_1" type="radio" name="owner-veteran" value="owner-veteran_option_1" />
-        <label class="usa-radio__label" for="owner-veteran_option_1">No</label>
+        <input class="usa-radio__input" id="funding-disaster_option_1" type="radio" name="funding-disaster" value="funding-disaster_option_1" />
+        <label class="usa-radio__label" for="funding-disaster_option_1">No</label>
     </div>
 
                             </fieldset>
@@ -246,7 +265,7 @@
                     <div class="grid-col-fill">
                         <ul class="usa-button-group margin-y-4">
                             <li class="usa-button-group__item">
-                                <a class="usa-button usa-button usa-button--big" href="app-pg-4.html">Next</a>
+                                <a class="usa-button usa-button usa-button--big" href="app-result-option-1.html">Next</a>
                             </li>
                         </ul>
                     </div>
