@@ -20,7 +20,59 @@
                 <div class="grid-row">
                     <div class="grid-col-fill">
                         <form class="usa-form usa-form--large">
-                            
+                            <fieldset class="usa-fieldset">
+                                @@include('input-text.html', {
+                                    "id": "owner-name",
+                                    "title": "Owner's Name",
+                                    "size": "3xl"
+                                })
+                            </fieldset>
+
+                            <fieldset class="usa-fieldset margin-top-3">
+                                @@include('input-radio.html', {
+                                    "id": "owner-submitting",
+                                    "title": "Are you the owner?",
+                                    "options": [
+                                        "Yes",
+                                        "No"
+                                    ]
+                                })
+                            </fieldset>
+
+                            <fieldset class="usa-fieldset margin-top-3">
+                                @@include('input-radio.html', {
+                                    "id": "owner-bankruptcy",
+                                    "title": "Has the owner had a prior bankruptcy?",
+                                    "options": [
+                                        "Yes",
+                                        "No"
+                                    ]
+                                })
+                            </fieldset>
+
+                            <fieldset class="usa-fieldset">
+                                @@include('input-date.html', {
+                                    "id": "owner-bday",
+                                    "title": "Owner's Date of Birth"
+                                })
+
+                                @@include('input-text.html', {
+                                    "id": "owner-ssn",
+                                    "title": "Owner's SSN",
+                                    "size": "md"
+                                })
+                            </fieldset>
+
+                            <fieldset class="usa-fieldset margin-top-3">
+                                @@include('input-radio.html', {
+                                    "id": "owner-veteran",
+                                    "title": "Is the owner a veteran or veteran's spouse?",
+                                    "options": [
+                                        "Yes",
+                                        "No"
+                                    ]
+                                })
+                            </fieldset>
                         </form>
                     </div>
                 </div>
