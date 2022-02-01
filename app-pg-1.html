@@ -168,7 +168,10 @@
     <abbr title="required" class="usa-hint usa-hint--required">*</abbr>
 </label>
 
-<input class="usa-input usa-input--3xl" id="business-name" name="business-name" type="text" required aria-required="true" />
+<div class="usa-input-group usa-input-group--3xl">
+     
+    <input class="usa-input usa-input--3xl" id="business-name" name="business-name"  type="text"   required aria-required="true">
+</div>
 
                                 <label class="usa-label text-bold" for="">Business Type <abbr title="required" class="usa-hint usa-hint--required">*</abbr></label>
 
@@ -195,8 +198,11 @@
     Business Zip Code
     <abbr title="required" class="usa-hint usa-hint--required">*</abbr>
 </label>
-
-<input class="usa-input usa-input--sm" id="business-zip" name="business-zip" type="text" required aria-required="true" />
+ <div class="usa-hint" id="business-zip-hint">ex. 45231</div> 
+<div class="usa-input-group usa-input-group--sm">
+     
+    <input class="usa-input usa-input--sm" id="business-zip" name="business-zip"   type="number"  required aria-required="true">
+</div>
                             </fieldset>
 
                             <fieldset class="usa-fieldset margin-top-3">
