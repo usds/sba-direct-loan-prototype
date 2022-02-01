@@ -3,4 +3,7 @@
     <abbr title="required" class="usa-hint usa-hint--required">*</abbr>
 </label>
 @@if (this.hint) { <div class="usa-hint" id="@@id-hint">@@hint</div> }
-<input class="usa-input usa-input--@@size" id="@@id" name="@@id" type="text" required aria-required="true" />
+<div class="usa-input-group usa-input-group--@@size">
+    @@if (this.prefix) { <div class="usa-input-prefix" aria-hidden="true">@@prefix</div> } 
+    <input class="usa-input usa-input--@@size" id="@@id" name="@@id" @@if (!this.type) { type="text" } @@if (this.type) { type="@@type" } required aria-required="true">
+</div>
