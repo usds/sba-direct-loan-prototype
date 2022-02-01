@@ -35,7 +35,32 @@
                                     "options": [
                                         "Yes",
                                         "No"
+                                    ],
+                                    "conditional_id": "owner-false",
+                                    "conditional_options": [
+                                        false,
+                                        true
                                     ]
+                                })
+                            </fieldset>
+
+                            <fieldset id="owner-false" class="usa-fieldset margin-left-3 display-none">
+                                @@include('input-text.html', {
+                                    "id": "applicant-name",
+                                    "title": "Your Name",
+                                    "size": "3xl"
+                                })
+
+                                @@include('input-text.html', {
+                                    "id": "applicant-relationship",
+                                    "title": "Your Relationship to the Business",
+                                    "size": "3xl"
+                                })
+
+                                @@include('input-text.html', {
+                                    "id": "owner-email",
+                                    "title": "Owner's Email",
+                                    "size": "3xl"
                                 })
                             </fieldset>
 

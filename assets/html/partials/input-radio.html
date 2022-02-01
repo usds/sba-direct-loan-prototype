@@ -3,7 +3,7 @@
 </legend>
 @@for (var i = 0; i < options.length; i++) {
     <div class="usa-radio">
-        <input class="usa-radio__input" id="`+id+`_option_`+i+`" type="radio" name="`+id+`" value="`+id+`_option_`+i+`" />
+        <input class="usa-radio__input" id="`+id+`_option_`+i+`" type="radio" name="`+id+`" value="`+id+`_option_`+i+`" @@if (this.conditional_id !== undefined) { onchange="conditionalOption('`+this.conditional_id+`', `+this.conditional_options[i]+`)" } />
         <label class="usa-radio__label" for="`+id+`_option_`+i+`">`+options[i]+`</label>
     </div>
 }

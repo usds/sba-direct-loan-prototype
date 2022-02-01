@@ -41,6 +41,7 @@ PATHS
 const PROJECT_SASS_SRC = "./assets/sass";
 const PROJECT_HTML_SRC = "./assets/html";
 const PROJECT_IMG_SRC = "./assets/img";
+const PROJECT_JS_SRC = "./assets/js";
 
 // Images destination
 const IMG_DEST = "./dist/assets/img";
@@ -99,6 +100,12 @@ gulp.task("copy-html", () => {
 gulp.task("copy-img", () => {
   return gulp.src(`${PROJECT_IMG_SRC}/*.*`)
     .pipe(gulp.dest(`${IMG_DEST}`))
+    .pipe(connect.reload());
+});
+
+gulp.task("copy-js", () => {
+  return gulp.src(`${PROJECT_JS_SRC}/*.js`)
+    .pipe(gulp.dest(`${JS_DEST}`))
     .pipe(connect.reload());
 });
 
@@ -204,6 +211,7 @@ gulp.task(
     "copy-uswds-js",
     "copy-html",
     "copy-img",
+    "copy-js",
     "build-sass"
   )
 );
@@ -212,9 +220,10 @@ gulp.task("watch-source", function () {
   gulp.watch(`${PROJECT_SASS_SRC}/**/*.scss`, gulp.series("build-sass"));
   gulp.watch(`${PROJECT_HTML_SRC}/**/*.html`, gulp.series("copy-html"));
   gulp.watch(`${PROJECT_IMG_SRC}/**/*.*`, gulp.series("copy-img"));
+  gulp.watch(`${PROJECT_JS_SRC}/**/*.js`, gulp.series("copy-js"));
 });
 
-gulp.task("watch", gulp.parallel("connect", gulp.series("build-sass", "copy-html", "copy-img", "watch-source")));
+gulp.task("watch", gulp.parallel("connect", gulp.series("build-sass", "copy-html", "copy-img", "copy-js", "watch-source")));
 
 gulp.task("default", gulp.series("watch"));
 
