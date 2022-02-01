@@ -13,6 +13,7 @@
 
 <body>
     <script src="assets/js/uswds.min.js"></script>
+<script src="assets/js/inputs.js"></script>
 
 <a class="usa-skipnav" href="#main-content">Skip to main content</a>
 <section class="usa-banner" aria-label="Official government website">
@@ -175,15 +176,35 @@
 </legend>
 
     <div class="usa-radio">
-        <input class="usa-radio__input" id="owner-submitting_option_0" type="radio" name="owner-submitting" value="owner-submitting_option_0" />
+        <input class="usa-radio__input" id="owner-submitting_option_0" type="radio" name="owner-submitting" value="owner-submitting_option_0"  onchange="conditionalOption('owner-false', false)"  />
         <label class="usa-radio__label" for="owner-submitting_option_0">Yes</label>
     </div>
 
     <div class="usa-radio">
-        <input class="usa-radio__input" id="owner-submitting_option_1" type="radio" name="owner-submitting" value="owner-submitting_option_1" />
+        <input class="usa-radio__input" id="owner-submitting_option_1" type="radio" name="owner-submitting" value="owner-submitting_option_1"  onchange="conditionalOption('owner-false', true)"  />
         <label class="usa-radio__label" for="owner-submitting_option_1">No</label>
     </div>
 
+                            </fieldset>
+
+                            <fieldset id="owner-false" class="usa-fieldset margin-left-3 display-none">
+                                <label class="usa-label text-bold" for="applicant-name">
+    Your Name
+    <abbr title="required" class="usa-hint usa-hint--required">*</abbr>
+</label>
+<input class="usa-input usa-input--3xl" id="applicant-name" name="applicant-name" type="text" required aria-required="true" />
+
+                                <label class="usa-label text-bold" for="applicant-relationship">
+    Your Relationship to the Business
+    <abbr title="required" class="usa-hint usa-hint--required">*</abbr>
+</label>
+<input class="usa-input usa-input--3xl" id="applicant-relationship" name="applicant-relationship" type="text" required aria-required="true" />
+
+                                <label class="usa-label text-bold" for="owner-email">
+    Owner's Email
+    <abbr title="required" class="usa-hint usa-hint--required">*</abbr>
+</label>
+<input class="usa-input usa-input--3xl" id="owner-email" name="owner-email" type="text" required aria-required="true" />
                             </fieldset>
 
                             <fieldset class="usa-fieldset margin-top-3">
@@ -192,12 +213,12 @@
 </legend>
 
     <div class="usa-radio">
-        <input class="usa-radio__input" id="owner-bankruptcy_option_0" type="radio" name="owner-bankruptcy" value="owner-bankruptcy_option_0" />
+        <input class="usa-radio__input" id="owner-bankruptcy_option_0" type="radio" name="owner-bankruptcy" value="owner-bankruptcy_option_0"  />
         <label class="usa-radio__label" for="owner-bankruptcy_option_0">Yes</label>
     </div>
 
     <div class="usa-radio">
-        <input class="usa-radio__input" id="owner-bankruptcy_option_1" type="radio" name="owner-bankruptcy" value="owner-bankruptcy_option_1" />
+        <input class="usa-radio__input" id="owner-bankruptcy_option_1" type="radio" name="owner-bankruptcy" value="owner-bankruptcy_option_1"  />
         <label class="usa-radio__label" for="owner-bankruptcy_option_1">No</label>
     </div>
 
@@ -228,12 +249,12 @@
 </legend>
 
     <div class="usa-radio">
-        <input class="usa-radio__input" id="owner-veteran_option_0" type="radio" name="owner-veteran" value="owner-veteran_option_0" />
+        <input class="usa-radio__input" id="owner-veteran_option_0" type="radio" name="owner-veteran" value="owner-veteran_option_0"  />
         <label class="usa-radio__label" for="owner-veteran_option_0">Yes</label>
     </div>
 
     <div class="usa-radio">
-        <input class="usa-radio__input" id="owner-veteran_option_1" type="radio" name="owner-veteran" value="owner-veteran_option_1" />
+        <input class="usa-radio__input" id="owner-veteran_option_1" type="radio" name="owner-veteran" value="owner-veteran_option_1"  />
         <label class="usa-radio__label" for="owner-veteran_option_1">No</label>
     </div>
 
