@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SBA Direct Loan Prototype</title>
+    @@include('head.html')
+</head>
+
+<body>
+    @@include('header.html')
+
+    <main id="main-content">
+        <section id="app-section" class="usa-section">
+            <div class="grid-container">
+                <div class="grid-row">
+                    <div class="tablet:grid-col-fill">
+                        <h2 class="font-heading-2xl">Here's What Happens Next</h2>
+                    </div>
+                </div>
+
+                <div class="grid-row grid-gap-6">
+                    <div class="tablet:grid-col-6">
+                        <p class="font-body-md line-height-sans-3 text-bold">
+                            Congrats!
+                        </p>
+                        <p class="font-body-md line-height-sans-3">
+                            The offering institution listed below will contact you within 10 business days to discuss
+                            your options.
+                        </p>
+                        <div class="usa-table-container--scrollable" tabindex="0">
+                            <table class="usa-table usa-table--compact">
+                                <caption>
+                                    Loan Contact
+                                </caption>
+                                <tr>
+                                    <th scope="row text-right">Your Contact</th>
+                                    <td class="font-mono-sm text-tabular text-right">Paula Parker</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row text-right">Phone #</th>
+                                    <td class="font-mono-sm text-tabular text-right">888-867-5309</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row text-right">Email</th>
+                                    <td class="font-mono-sm text-tabular text-right">pparker@sba.gov</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <p class="font-body-md line-height-sans-3 text-bold">
+                            This offering is conditional. It is likely that more information will be needed to confirm
+                            the loan. A checklist of likely needs is provided on this page.
+                        </p>
+                    </div>
+                    <div class="tablet:grid-col-6 margin-top-3">
+                        <ul class="usa-icon-list usa-icon-list--size-md">
+                            <li class="usa-icon-list__item">
+                                <div class="usa-icon-list__icon">
+                                    <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
+                                        <use xlink:href="/assets/img/sprite.svg#check_box_outline_blank"></use>
+                                    </svg>
+                                </div>
+                                <div class="usa-icon-list__content">Personal tax returns from past 5 years</div>
+                            </li>
+                            <li class="usa-icon-list__item">
+                                <div class="usa-icon-list__icon">
+                                    <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
+                                        <use xlink:href="/assets/img/sprite.svg#check_box_outline_blank"></use>
+                                    </svg>
+                                </div>
+                                <div class="usa-icon-list__content">Business tax returns from past 5 years</div>
+                            </li>
+                            <li class="usa-icon-list__item">
+                                <div class="usa-icon-list__icon">
+                                    <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
+                                        <use xlink:href="/assets/img/sprite.svg#check_box_outline_blank"></use>
+                                    </svg>
+                                </div>
+                                <div class="usa-icon-list__content">Identification materials (e.g. passport, driver's license, etc.)</div>
+                            </li>
+                            <li class="usa-icon-list__item">
+                                <div class="usa-icon-list__icon">
+                                    <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
+                                        <use xlink:href="/assets/img/sprite.svg#check_box_outline_blank"></use>
+                                    </svg>
+                                </div>
+                                <div class="usa-icon-list__content">Personal and business bank statements</div>
+                            </li>
+                            <li class="usa-icon-list__item">
+                                <div class="usa-icon-list__icon">
+                                    <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
+                                        <use xlink:href="/assets/img/sprite.svg#check_box_outline_blank"></use>
+                                    </svg>
+                                </div>
+                                <div class="usa-icon-list__content">Proof of collateral</div>
+                            </li>
+                            <li class="usa-icon-list__item">
+                                <div class="usa-icon-list__icon">
+                                    <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
+                                        <use xlink:href="/assets/img/sprite.svg#check_box_outline_blank"></use>
+                                    </svg>
+                                </div>
+                                <div class="usa-icon-list__content">Articles of incorporation.</div>
+                            </li>
+                            <li class="usa-icon-list__item">
+                                <div class="usa-icon-list__icon">
+                                    <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
+                                        <use xlink:href="/assets/img/sprite.svg#check_box_outline_blank"></use>
+                                    </svg>
+                                </div>
+                                <div class="usa-icon-list__content">Credit score</div>
+                            </li>
+                            <li class="usa-icon-list__item">
+                                <div class="usa-icon-list__icon">
+                                    <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
+                                        <use xlink:href="/assets/img/sprite.svg#check_box_outline_blank"></use>
+                                    </svg>
+                                </div>
+                                <div class="usa-icon-list__content">Updated business plan</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="grid-row">
+                    <div class="grid-col-fill">
+                        <ul class="usa-button-group margin-y-4 flex-justify-end">
+                            <li class="usa-button-group__item">
+                                <a class="usa-button usa-button--secondary usa-button--big" href="">Create an
+                                    Account</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    @@include('footer.html')
+</body>
+
+</html>
