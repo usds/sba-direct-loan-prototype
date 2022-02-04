@@ -17,8 +17,8 @@
                 "title": "Congratulations!"
                 })
 
-                <div class="grid-row grid-gap-4">
-                    <div class="tablet:grid-col-fill">
+                <div class="grid-row">
+                    <div class="grid-col-fill">
                         <p class="font-body-md line-height-sans-3 text-bold">
                             Based on the information you provided us, we've found potential loan offerings for you.
                         </p>
@@ -31,78 +31,83 @@
                             will have to complete the form again.
                         </p>
                     </div>
-                    <div class="tablet:grid-col-auto">
-                        <div class="usa-table-container--scrollable" tabindex="0">
-                            <table class="usa-table results-table">
-                                <thead>
+                </div>
+
+                <div class="grid-row">
+                    <div class="grid-col-fill">
+                        <div class="tablet:grid-col-auto">
+                            <div class="usa-table-container--scrollable" tabindex="0">
+                                <table class="usa-table results-table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" class="text-center font-ui-sm"></th>
+                                            <th scope="col" class="text-center font-ui-sm">SBA</th>
+                                            <th scope="col" class="text-center font-ui-sm">Partner</th>
+                                            <th scope="col" class="text-center font-ui-sm">Partner</th>
+                                        </tr>
+                                    </thead>
                                     <tr>
-                                        <th scope="col" class="text-center font-ui-sm"></th>
-                                        <th scope="col" class="text-center font-ui-sm">SBA</th>
-                                        <th scope="col" class="text-center font-ui-sm">Partner</th>
-                                        <th scope="col" class="text-center font-ui-sm">Partner</th>
+                                        <th scope="row" class="font-ui-sm line-height-sans2"><strong>APR</strong></th>
+                                        <td class="font-mono-sm text-tabular text-center">0%</td>
+                                        <td class="font-mono-sm text-tabular text-center">4%</td>
+                                        <td class="font-mono-sm text-tabular text-center">5%</td>
                                     </tr>
-                                </thead>
-                                <tr>
-                                    <th scope="row" class="font-ui-sm line-height-sans2"><strong>APR</strong></th>
-                                    <td class="font-mono-sm text-tabular text-center">0%</td>
-                                    <td class="font-mono-sm text-tabular text-center">4%</td>
-                                    <td class="font-mono-sm text-tabular text-center">5%</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="font-ui-sm line-height-sans-2"><strong>Loan<br />Type</strong></th>
-                                    <td class="font-ui-sm text-tabular text-center">Term Loan</td>
-                                    <td class="font-ui-sm text-tabular text-center">Term Loan</td>
-                                    <td class="font-ui-sm text-tabular text-center">Term Loan</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="font-ui-sm line-height-sans-2"><strong>Loan<br />Term</strong></th>
-                                    <td class="font-ui-sm text-tabular text-center">5 years</td>
-                                    <td class="font-ui-sm text-tabular text-center">6 years</td>
-                                    <td class="font-ui-sm text-tabular text-center">5 years</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="font-ui-sm line-height-sans-2"><strong>Payment<br />Frequency</strong></th>
-                                    <td class="font-ui-sm text-tabular text-center">Bi-weekly</td>
-                                    <td class="font-ui-sm text-tabular text-center">Monthly</td>
-                                    <td class="font-ui-sm text-tabular text-center">Monthly</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="font-ui-sm line-height-sans-2"><strong>Origination<br />Fee</strong></th>
-                                    <td class="font-mono-sm text-tabular text-center">$500</td>
-                                    <td class="font-mono-sm text-tabular text-center">3%</td>
-                                    <td class="font-mono-sm text-tabular text-center">2%</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="font-ui-sm line-height-sans-2"><strong>Collateral</strong></th>
-                                    <td class="font-ui-sm text-tabular text-center">Secured</td>
-                                    <td class="font-ui-sm text-tabular text-center">Secured</td>
-                                    <td class="font-ui-sm text-tabular text-center">Secured</td>
-                                </tr>
-                                <tr class="results-learn-more">
-                                    <th scope="row"></th>
-                                    <td class="font-mono-sm text-tabular text-center">
-                                        <ul class="usa-button-group flex-justify-center">
-                                            <li class="usa-button-group__item">
-                                                <a class="usa-button usa-button--secondary line-height-sans-2 padding-x-2 padding-y-1 font-ui-sm text-normal" href="app-result-selected.html">Learn<br />More</a>
-                                            </li>
-                                        </ul>
-                                    </td>
-                                    <td class="font-mono-sm text-tabular text-center">
-                                        <ul class="usa-button-group flex-justify-center">
-                                            <li class="usa-button-group__item">
-                                                <a class="usa-button usa-button--secondary line-height-sans-2 padding-x-2 padding-y-1 font-ui-sm text-normal" href="app-result-selected.html">Learn<br />More</a>
-                                            </li>
-                                        </ul>
-                                    </td>
-                                    <td class="font-mono-sm text-tabular text-center">
-                                        <ul class="usa-button-group flex-justify-center">
-                                            <li class="usa-button-group__item">
-                                                <a class="usa-button usa-button--secondary line-height-sans-2 padding-x-2 padding-y-1 font-ui-sm text-normal" href="app-result-selected.html">Learn<br />More</a>
-                                            </li>
-                                        </ul>
-                                    </td>
-                                </tr>
-                            </table>
+                                    <tr>
+                                        <th scope="row" class="font-ui-sm line-height-sans-2"><strong>Loan Type</strong></th>
+                                        <td class="font-ui-sm text-tabular text-center">Term Loan</td>
+                                        <td class="font-ui-sm text-tabular text-center">Term Loan</td>
+                                        <td class="font-ui-sm text-tabular text-center">Term Loan</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="font-ui-sm line-height-sans-2"><strong>Loan Term</strong></th>
+                                        <td class="font-ui-sm text-tabular text-center">5 years</td>
+                                        <td class="font-ui-sm text-tabular text-center">6 years</td>
+                                        <td class="font-ui-sm text-tabular text-center">5 years</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="font-ui-sm line-height-sans-2"><strong>Payment Frequency</strong></th>
+                                        <td class="font-ui-sm text-tabular text-center">Bi-weekly</td>
+                                        <td class="font-ui-sm text-tabular text-center">Monthly</td>
+                                        <td class="font-ui-sm text-tabular text-center">Monthly</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="font-ui-sm line-height-sans-2"><strong>Origination Fee</strong></th>
+                                        <td class="font-mono-sm text-tabular text-center">$500</td>
+                                        <td class="font-mono-sm text-tabular text-center">3%</td>
+                                        <td class="font-mono-sm text-tabular text-center">2%</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="font-ui-sm line-height-sans-2"><strong>Collateral</strong></th>
+                                        <td class="font-ui-sm text-tabular text-center">Secured</td>
+                                        <td class="font-ui-sm text-tabular text-center">Secured</td>
+                                        <td class="font-ui-sm text-tabular text-center">Secured</td>
+                                    </tr>
+                                    <tr class="results-learn-more">
+                                        <th scope="row"></th>
+                                        <td class="font-mono-sm text-tabular text-center">
+                                            <ul class="usa-button-group flex-justify-center">
+                                                <li class="usa-button-group__item">
+                                                    <a class="usa-button usa-button--secondary line-height-sans-2 padding-x-2 padding-y-1 font-ui-sm text-normal" href="app-result-selected.html">Learn More</a>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                        <td class="font-mono-sm text-tabular text-center">
+                                            <ul class="usa-button-group flex-justify-center">
+                                                <li class="usa-button-group__item">
+                                                    <a class="usa-button usa-button--secondary line-height-sans-2 padding-x-2 padding-y-1 font-ui-sm text-normal" href="app-result-selected.html">Learn More</a>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                        <td class="font-mono-sm text-tabular text-center">
+                                            <ul class="usa-button-group flex-justify-center">
+                                                <li class="usa-button-group__item">
+                                                    <a class="usa-button usa-button--secondary line-height-sans-2 padding-x-2 padding-y-1 font-ui-sm text-normal" href="app-result-selected.html">Learn More</a>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
