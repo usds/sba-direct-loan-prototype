@@ -19,3 +19,49 @@ i.e.
 @include u-padding-right('05');
 ----------------------------------------
 */
+
+.results-table {
+  border-spacing: 6px !important;
+  border-collapse: separate !important;
+
+  caption {
+    text-align: center !important;
+  }
+
+  thead {
+    tr {
+      th:first-child {
+        background: none !important;
+        border-left: none !important;
+        border-top: none !important;
+      }
+
+      th {
+        border: none;
+      }
+    }
+  }
+
+  tr {
+    th:first-child {
+      font-weight: bold;
+      text-align: left;
+      border: none !important;
+      background: color("base-lightest");
+    }
+
+    td {
+      border-color: color("base-lightest");
+    }
+  }
+
+  tr.results-learn-more {
+    th {
+      background: none;
+    }
+
+    td {
+      border: none !important;
+    }
+  }
+}

@@ -216,6 +216,19 @@ gulp.task(
   )
 );
 
+gulp.task(
+  "build",
+  gulp.series(
+    "copy-uswds-fonts",
+    "copy-uswds-images",
+    "copy-uswds-js",
+    "copy-html",
+    "copy-img",
+    "copy-js",
+    "build-sass"
+  )
+);
+
 gulp.task("watch-source", function () {
   gulp.watch(`${PROJECT_SASS_SRC}/**/*.scss`, gulp.series("build-sass"));
   gulp.watch(`${PROJECT_HTML_SRC}/**/*.html`, gulp.series("copy-html"));
