@@ -63,12 +63,25 @@
                                 })
                             </fieldset>
                             
-                            <fieldset class="usa-fieldset">
-                                @@include('input-select.html', {
+                            <fieldset class="usa-fieldset margin-top-3">
+                                @@include('input-radio-full.html', {
                                     "id": "business-industry",
                                     "title": "Business Industry",
                                     "size": "lg",
+                                    "hint": "Choose the industry with the closest match to your business",
                                     "options": [
+                                        "Agriculture",
+                                        "Beauty",
+                                        "Childcare",
+                                        "Education",
+                                        "Finance",
+                                        "Food &amp; Food Services",
+                                        "Health",
+                                        "Lifestyle",
+                                        "Professional Services",
+                                        "Retail"
+                                    ],
+                                    "descriptions": [
                                         "Agriculture",
                                         "Beauty",
                                         "Childcare",

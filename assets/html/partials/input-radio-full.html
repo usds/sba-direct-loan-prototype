@@ -1,0 +1,13 @@
+<legend class="usa-legend text-bold">
+    @@title <abbr title="required" class="usa-hint usa-hint--required">*</abbr>
+</legend>
+@@if (this.hint) { <div class="usa-hint padding-bottom-1" id="@@id-hint">@@hint</div> }
+@@for (var i = 0; i < options.length; i++) {
+    <div class="usa-radio">
+        <input class="usa-radio__input usa-radio__input--tile" id="`+id+`_option_`+i+`" type="radio" name="`+id+`" value="`+id+`_option_`+i+`" @@if (this.conditional_id !== undefined) { onchange="conditionalOption('`+this.conditional_id+`', `+this.conditional_options[i]+`)" } />
+        <label class="usa-radio__label" for="`+id+`_option_`+i+`">
+            <strong>`+options[i]+`</strong>
+            @@if (this.descriptions) { <span class="usa-checkbox__label-description">`+descriptions[i]+`</span> }
+        </label>
+    </div>
+}
