@@ -12,22 +12,17 @@
     <main id="main-content">
         <section id="app-section" class="usa-section">
             <div class="grid-container">
-                @@include('app-steps.html', {
-                "step": 5,
-                "title": "Congratulations!"
-                })
-
                 <div class="grid-row">
                     <div class="tablet:grid-col-fill">
-                        <h2 class="font-heading-2xl margin-bottom-2">Loan Details</h2>
+                        <h2 class="font-heading-2xl margin-bottom-2 margin-top-0">Loan Details</h2>
                         <h3 class="font-ui-xl margin-top-2 text-normal">@@lender</h3>
                     </div>
                     <div class="tablet:grid-col-auto text-right">
-                        <img class="height-10 margin-top-2" src="assets/img/@@logo" alt="@@lender" />
+                        <img class="width-card-lg" src="assets/img/@@logo" alt="@@lender" />
                     </div>
                 </div>
 
-                <div class="grid-row grid-gap-4">
+                <div class="grid-row grid-gap-4 margin-top-2">
                     <div class="tablet:grid-auto">
                         <div class="usa-table-container--scrollable margin-top-0 margin-left-neg-05" tabindex="0">
                             <table class="usa-table results-table-horizontal">
