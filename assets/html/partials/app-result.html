@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SBA Loan Application Prototype</title>
+    @@include('head.html')
+</head>
+
+<body>
+    @@include('header.html')
+
+    <main id="main-content">
+        <section id="app-section" class="usa-section">
+            <div class="grid-container">
+                @@include('app-steps.html', {
+                "step": 5,
+                "title": "Congratulations!"
+                })
+
+                <div class="grid-row">
+                    <div class="tablet:grid-col-fill">
+                        <h2 class="font-heading-2xl margin-bottom-2">Loan Details</h2>
+                        <h3 class="font-ui-xl margin-top-2 text-normal">@@lender</h3>
+                    </div>
+                    <div class="tablet:grid-col-auto text-right">
+                        <img class="height-10 margin-top-2" src="assets/img/@@logo" alt="@@lender" />
+                    </div>
+                </div>
+
+                <div class="grid-row grid-gap-4">
+                    <div class="tablet:grid-auto">
+                        <div class="usa-table-container--scrollable margin-top-0 margin-left-neg-05" tabindex="0">
+                            <table class="usa-table results-table-horizontal">
+                                <caption>
+                                    Loan Details
+                                </caption>
+                                <thead>
+                                    <th scope="col" class="font-ui-md">APR</th>
+                                    <th scope="col" class="font-ui-md">Loan Type</th>
+                                    <th scope="col" class="font-ui-md">Loan Term</th>
+                                    <th scope="col" class="font-ui-md">Payment Frequency</th>
+                                    <th scope="col" class="font-ui-md">Origination Fee</th>
+                                    <th scope="col" class="font-ui-md">Collateral</th>
+                                </thead>
+                                <tr>
+                                    <td class="font-mono-md text-tabular text-center">0%</td>
+                                    <td class="font-ui-md text-tabular text-center">Term Loan</td>
+                                    <td class="font-ui-md text-tabular text-center">5 years</td>
+                                    <td class="font-ui-md text-tabular text-center">Bi-weekly</td>
+                                    <td class="font-mono-md text-tabular text-center">$500</td>
+                                    <td class="font-ui-md text-tabular text-center">Secured</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-row">
+                    <div class="tablet:grid-col-auto">
+                        <div class="usa-table-container--scrollable margin-top-0 margin-left-neg-05" tabindex="0">
+                            <table class="usa-table results-table-horizontal">
+                                <caption>
+                                    Loan Contact
+                                </caption>
+                                <thead>
+                                    <th scope="col" class="font-ui-md">Your Contact</th>
+                                    <th scope="col" class="font-ui-md">Phone #</th>
+                                    <th scope="col" class="font-ui-md">Email</th>
+                                </thead>
+                                <tr>
+                                    <td class="font-ui-md text-tabular text-center">Paula Parker</td>
+                                    <td class="font-ui-md text-tabular text-center">888-867-5309</td>
+                                    <td class="font-ui-md text-tabular text-center">pparker@sba.gov</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-row grid-gap-4">
+                    <div class="tablet:grid-col-fill">
+                        <h3 class="font-heading-lg">Ready to proceed?</h3>
+
+                        <p class="font-body-md line-height-sans-3">
+                            If this loan looks like the right fit for you, you can click "Choose this loan". Clicking this button submits your application to the financial institution listed (whether SBA or a partner). The offering institution will contact you within 10 business days to discuss your options.
+                        </p>
+                        <p class="font-body-md line-height-sans-3 text-bold">
+                            This offering is conditional. It is likely that more information will be needed to confirm the loan.
+                        </p>
+                    </div>
+                    
+                </div>
+
+
+                <div class="grid-row">
+                    <div class="grid-col-fill">
+                        <ul class="usa-button-group margin-y-4">
+                            <li class="usa-button-group__item">
+                                <a class="usa-button usa-button--outline usa-button--big" href="app-result-option-1.html">Return to Other Offers</a>
+                                <a class="usa-button usa-button--secondary usa-button--big" href="app-next-steps.html">Choose This Loan</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    @@include('footer.html')
+</body>
+
+</html>

@@ -21,7 +21,7 @@ i.e.
 */
 
 .results-table {
-  border-spacing: 6px !important;
+  border-spacing: 4px !important;
   border-collapse: separate !important;
 
   caption {
@@ -63,6 +63,29 @@ i.e.
 
     td {
       border: none !important;
+    }
+  }
+}
+
+.results-table-horizontal {
+  border-spacing: 4px !important;
+  border-collapse: separate !important;
+
+  caption {
+    margin-left: 6px;
+  }
+
+  thead {
+    tr {
+      th {
+        border: none;
+      }
+    }
+  }
+
+  tr {
+    td {
+      border-color: color("base-lightest");
     }
   }
 }
