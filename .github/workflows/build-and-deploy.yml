@@ -1,4 +1,4 @@
-name: Build and Deploy Direct Loan Prototype
+name: Build and Deploy Loan Application Prototype
 on:
   push:
     branches:

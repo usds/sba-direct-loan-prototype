@@ -1,7 +1,7 @@
 {
   "name": "direct-loan-user-research-prototype",
   "version": "1.0.0",
-  "description": "Sample workflow for direct loan sign up.",
+  "description": "Sample workflow for loan application sign up.",
   "main": "index.js",
   "scripts": {
     "install": "gulp build",
