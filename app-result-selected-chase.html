@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>SBA Loan Application Prototype</title>
+    <title>SBA Community Loans Prototype</title>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -40,7 +40,7 @@
             <div class="usa-logo" id="basic-logo">
                 <em class="usa-logo__text">
                     <a href="index.html" title="SBA Direct Lending">
-                        SBA Loan Application
+                        SBA Community Loans
                     </a>
                 </em>
             </div>
@@ -68,7 +68,7 @@
                 </li>
                 <li class="usa-nav__primary-item">
                     <a href="program.html" class="usa-nav__link">
-                        <span>Loan Programs</span>
+                        <span>Loans Offered</span>
                     </a>
                 </li>
             </ul>
@@ -80,128 +80,85 @@
         <section id="app-section" class="usa-section">
             <div class="grid-container">
                 <div class="grid-row">
-    <div class="tablet:grid-col-fill">
-        <div class="usa-step-indicator usa-step-indicator--counters-sm" aria-label="progress">
-            <ol class="usa-step-indicator__segments">
-                <li
-                    class="usa-step-indicator__segment  usa-step-indicator__segment--complete  ">
-                    <span class="usa-step-indicator__segment-label">Business Details</span>
-                </li>
-                <li
-                    class="usa-step-indicator__segment  usa-step-indicator__segment--complete  ">
-                    <span class="usa-step-indicator__segment-label">Business Financials</span>
-                </li>
-                <li
-                    class="usa-step-indicator__segment  usa-step-indicator__segment--complete  ">
-                    <span class="usa-step-indicator__segment-label">Personal Details
-                    </span>
-                </li>
-                <li
-                    class="usa-step-indicator__segment  usa-step-indicator__segment--complete  ">
-                    <span class="usa-step-indicator__segment-label">Funding Needs</span>
-                </li>
-                <li
-                    class="usa-step-indicator__segment   usa-step-indicator__segment--current ">
-                    <span class="usa-step-indicator__segment-label">Results</span>
-                </li>
-            </ol>
-            <div class="usa-step-indicator__header">
-                <h4 class="usa-step-indicator__heading">
-                    <span class="usa-step-indicator__heading-counter">
-                        <span class="usa-sr-only">Step</span>
-                        <span class="usa-step-indicator__current-step">5</span>
-                        <span class="usa-step-indicator__total-steps">of 5</span>
-                    </span>
-                    <span class="usa-step-indicator__heading-text">Congratulations!</span>
-                </h4>
-            </div>
-        </div>
-    </div>
-</div>
+                    <div class="tablet:grid-col-fill">
+                        <h2 class="font-heading-2xl margin-bottom-2 margin-top-0">Loan Details</h2>
+                        <h3 class="font-ui-xl margin-top-2 text-normal">Chase</h3>
+                    </div>
+                    <div class="tablet:grid-col-auto text-right">
+                        <img class="width-card-lg" src="assets/img/chase-logo.svg" alt="Chase" />
+                    </div>
+                </div>
+
+                <div class="grid-row grid-gap-4 margin-top-2">
+                    <div class="tablet:grid-auto">
+                        <div class="usa-table-container--scrollable margin-top-0 margin-left-neg-05" tabindex="0">
+                            <table class="usa-table results-table-horizontal">
+                                <caption>
+                                    Loan Details
+                                </caption>
+                                <thead>
+                                    <th scope="col" class="font-ui-md">Amount</th>
+                                    <th scope="col" class="font-ui-md">APR</th>
+                                    <th scope="col" class="font-ui-md">Loan Type</th>
+                                    <th scope="col" class="font-ui-md">Loan Term</th>
+                                    <th scope="col" class="font-ui-md">Payment Frequency</th>
+                                    <th scope="col" class="font-ui-md">Origination Fee</th>
+                                    <th scope="col" class="font-ui-md">Collateral</th>
+                                </thead>
+                                <tr>
+                                    <td class="font-mono-md text-tabular text-center">$75,000</td>
+                                    <td class="font-mono-md text-tabular text-center">3.00%</td>
+                                    <td class="font-ui-md text-tabular text-center">Term Loan</td>
+                                    <td class="font-ui-md text-tabular text-center">6 years</td>
+                                    <td class="font-ui-md text-tabular text-center">Monthly</td>
+                                    <td class="font-mono-md text-tabular text-center">2%</td>
+                                    <td class="font-ui-md text-tabular text-center">Secured</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="grid-row">
-                    <div class="tablet:grid-col-fill">
-                        <h2 class="font-heading-2xl">Loan Details</h2>
+                    <div class="tablet:grid-col-auto">
+                        <div class="usa-table-container--scrollable margin-top-0 margin-left-neg-05" tabindex="0">
+                            <table class="usa-table results-table-horizontal">
+                                <caption>
+                                    Loan Contact
+                                </caption>
+                                <thead>
+                                    <th scope="col" class="font-ui-md">Your Contact</th>
+                                    <th scope="col" class="font-ui-md">Phone #</th>
+                                    <th scope="col" class="font-ui-md">Email</th>
+                                </thead>
+                                <tr>
+                                    <td class="font-ui-md text-tabular text-center">Paula Parker</td>
+                                    <td class="font-ui-md text-tabular text-center">888-867-5309</td>
+                                    <td class="font-ui-md text-tabular text-center">pparker@sba.gov</td>
+                                </tr>
+                            </table>
+                        </div>
                     </div>
                 </div>
 
                 <div class="grid-row grid-gap-4">
                     <div class="tablet:grid-col-fill">
+                        <h3 class="font-heading-lg">Ready to proceed?</h3>
+
                         <p class="font-body-md line-height-sans-3">
-                            If this loan looks like the right fit for you, you can click "Choose this loan".
-                        </p>
-                        <p class="font-body-md line-height-sans-3">
-                            Clicking this button submits your application to the financial institution listed (whether SBA or a partner).
-                        </p>
-                        <p class="font-body-md line-height-sans-3">
-                            The offering institution will contact you within 10 business days to discuss your options.
+                            If this loan looks like the right fit for you, you can click "Choose this Loan". Clicking this button submits your application to the financial institution listed (whether SBA or a partner). The offering institution will contact you within 10 business days to discuss your options.
                         </p>
                         <p class="font-body-md line-height-sans-3 text-bold">
                             This offering is conditional. It is likely that more information will be needed to confirm the loan.
                         </p>
-                        <p class="font-body-md line-height-sans-3">
-                            A list of these items will be made available to you once you choose a loan.
-                        </p>
                     </div>
-                    <div class="tablet:grid-col-auto">
-                        <div class="usa-table-container--scrollable" tabindex="0">
-                            <table class="usa-table results-table">
-                                <caption>
-                                    Loan Contact
-                                </caption>
-                                <tr>
-                                    <th scope="row text-right">Your Contact</th>
-                                    <td class="font-ui-sm text-tabular text-right">Paula Parker</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row text-right">Phone #</th>
-                                    <td class="font-ui-sm text-tabular text-right">888-867-5309</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row text-right">Email</th>
-                                    <td class="font-ui-sm text-tabular text-right">pparker@sba.gov</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="tablet:grid-col-auto">
-                        <div class="usa-table-container--scrollable" tabindex="0">
-                            <table class="usa-table results-table">
-                                <caption>
-                                    Loan Details
-                                </caption>
-                                <tr>
-                                    <th scope="row" class="font-ui-sm line-height-sans2"><strong>APR</strong></th>
-                                    <td class="font-mono-sm text-tabular text-center">0%</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="font-ui-sm line-height-sans-2"><strong>Loan<br />Type</strong></th>
-                                    <td class="font-ui-sm text-tabular text-center">Term Loan</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="font-ui-sm line-height-sans-2"><strong>Loan<br />Term</strong></th>
-                                    <td class="font-ui-sm text-tabular text-center">5 years</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="font-ui-sm line-height-sans-2"><strong>Payment<br />Frequency</strong></th>
-                                    <td class="font-ui-sm text-tabular text-center">Bi-weekly</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="font-ui-sm line-height-sans-2"><strong>Origination<br />Fee</strong></th>
-                                    <td class="font-mono-sm text-tabular text-center">$500</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="font-ui-sm line-height-sans-2"><strong>Collateral</strong></th>
-                                    <td class="font-ui-sm text-tabular text-center">Secured</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
+                    
                 </div>
+
 
                 <div class="grid-row">
                     <div class="grid-col-fill">
-                        <ul class="usa-button-group margin-y-4 flex-justify-end">
+                        <ul class="usa-button-group margin-y-4">
                             <li class="usa-button-group__item">
                                 <a class="usa-button usa-button--outline usa-button--big" href="app-result-option-1.html">Return to Other Offers</a>
                                 <a class="usa-button usa-button--secondary usa-button--big" href="app-next-steps.html">Choose This Loan</a>

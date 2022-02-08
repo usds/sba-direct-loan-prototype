@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>SBA Loan Application Prototype</title>
+    <title>SBA Community Loans Prototype</title>
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -40,7 +40,7 @@
             <div class="usa-logo" id="basic-logo">
                 <em class="usa-logo__text">
                     <a href="index.html" title="SBA Direct Lending">
-                        SBA Loan Application
+                        SBA Community Loans
                     </a>
                 </em>
             </div>
@@ -68,7 +68,7 @@
                 </li>
                 <li class="usa-nav__primary-item">
                     <a href="program.html" class="usa-nav__link">
-                        <span>Loan Programs</span>
+                        <span>Loans Offered</span>
                     </a>
                 </li>
             </ul>
@@ -121,14 +121,14 @@
 
                 <div class="grid-row">
                     <div class="grid-col-fill">
-                        <p class="font-body-md line-height-sans-3 text-bold">
+                        <h3 class="font-heading-lg line-height-sans-3 text-bold">
                             Based on the information you provided us, we've found potential loan offerings for you.
-                        </p>
+                        </h3>
                         <p class="font-body-md line-height-sans-3">
-                            Please review the options to the right. You can click on "Learn More" to find out more about
+                            Please review the options below. You can click on "Learn More" to find out more about
                             the institution and terms of the loans.
                         </p>
-                        <p class="font-body-md line-height-sans-3">
+                        <p class="font-body-md line-height-sans-3 text-italic">
                             This application is automatically saved and available to you for 60 days. After 60 days, you
                             will have to complete the form again.
                         </p>
@@ -138,27 +138,33 @@
                 <div class="grid-row">
                     <div class="grid-col-fill">
                         <div class="tablet:grid-col-auto">
-                            <div class="usa-table-container--scrollable" tabindex="0">
+                            <div class="usa-table-container--scrollable margin-left-neg-05" tabindex="0">
                                 <table class="usa-table results-table">
                                     <thead>
                                         <tr>
                                             <th scope="col" class="text-center font-ui-sm"></th>
-                                            <th scope="col" class="text-center font-ui-sm">SBA</th>
-                                            <th scope="col" class="text-center font-ui-sm">Partner</th>
-                                            <th scope="col" class="text-center font-ui-sm">Partner</th>
+                                            <th scope="col" class="text-center font-ui-sm">
+                                                <img class="width-card" src="assets/img/SBA-Logo-Horizontal-RGB.svg" alt="Small Business Administration" />
+                                            </th>
+                                            <th scope="col" class="text-center font-ui-sm">
+                                                <img class="width-card" src="assets/img/chase-logo.svg" alt="Chase" />
+                                            </th>
+                                            <th scope="col" class="text-center font-ui-sm">
+                                                <img class="width-card" src="assets/img/california-credit-union.svg" alt="California Credit Union" />
+                                            </th>
                                         </tr>
                                     </thead>
                                     <tr>
-                                        <th scope="row" class="font-ui-sm line-height-sans2"><strong>APR</strong></th>
-                                        <td class="font-mono-sm text-tabular text-center">0%</td>
-                                        <td class="font-mono-sm text-tabular text-center">4%</td>
-                                        <td class="font-mono-sm text-tabular text-center">5%</td>
+                                        <th scope="row" class="font-ui-sm line-height-sans2"><strong>Amount</strong></th>
+                                        <td class="font-mono-sm text-tabular text-center">$50,000</td>
+                                        <td class="font-mono-sm text-tabular text-center">$75,000</td>
+                                        <td class="font-mono-sm text-tabular text-center">$50,000</td>
                                     </tr>
                                     <tr>
-                                        <th scope="row" class="font-ui-sm line-height-sans-2"><strong>Loan Type</strong></th>
-                                        <td class="font-ui-sm text-tabular text-center">Term Loan</td>
-                                        <td class="font-ui-sm text-tabular text-center">Term Loan</td>
-                                        <td class="font-ui-sm text-tabular text-center">Term Loan</td>
+                                        <th scope="row" class="font-ui-sm line-height-sans2"><strong>APR</strong></th>
+                                        <td class="font-mono-sm text-tabular text-center">0.00%</td>
+                                        <td class="font-mono-sm text-tabular text-center">3.00%</td>
+                                        <td class="font-mono-sm text-tabular text-center">0.25%</td>
                                     </tr>
                                     <tr>
                                         <th scope="row" class="font-ui-sm line-height-sans-2"><strong>Loan Term</strong></th>
@@ -175,35 +181,29 @@
                                     <tr>
                                         <th scope="row" class="font-ui-sm line-height-sans-2"><strong>Origination Fee</strong></th>
                                         <td class="font-mono-sm text-tabular text-center">$500</td>
-                                        <td class="font-mono-sm text-tabular text-center">3%</td>
                                         <td class="font-mono-sm text-tabular text-center">2%</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row" class="font-ui-sm line-height-sans-2"><strong>Collateral</strong></th>
-                                        <td class="font-ui-sm text-tabular text-center">Secured</td>
-                                        <td class="font-ui-sm text-tabular text-center">Secured</td>
-                                        <td class="font-ui-sm text-tabular text-center">Secured</td>
+                                        <td class="font-mono-sm text-tabular text-center">0%</td>
                                     </tr>
                                     <tr class="results-learn-more">
                                         <th scope="row"></th>
                                         <td class="font-mono-sm text-tabular text-center">
                                             <ul class="usa-button-group flex-justify-center">
                                                 <li class="usa-button-group__item">
-                                                    <a class="usa-button usa-button--secondary line-height-sans-2 padding-x-2 padding-y-1 font-ui-sm text-normal" href="app-result-selected.html">Learn More</a>
+                                                    <a class="usa-button usa-button--secondary line-height-sans-2 padding-x-2 padding-y-1 font-ui-sm text-normal" href="app-result-selected-sba.html">Learn More</a>
                                                 </li>
                                             </ul>
                                         </td>
                                         <td class="font-mono-sm text-tabular text-center">
                                             <ul class="usa-button-group flex-justify-center">
                                                 <li class="usa-button-group__item">
-                                                    <a class="usa-button usa-button--secondary line-height-sans-2 padding-x-2 padding-y-1 font-ui-sm text-normal" href="app-result-selected.html">Learn More</a>
+                                                    <a class="usa-button usa-button--secondary line-height-sans-2 padding-x-2 padding-y-1 font-ui-sm text-normal" href="app-result-selected-chase.html">Learn More</a>
                                                 </li>
                                             </ul>
                                         </td>
                                         <td class="font-mono-sm text-tabular text-center">
                                             <ul class="usa-button-group flex-justify-center">
                                                 <li class="usa-button-group__item">
-                                                    <a class="usa-button usa-button--secondary line-height-sans-2 padding-x-2 padding-y-1 font-ui-sm text-normal" href="app-result-selected.html">Learn More</a>
+                                                    <a class="usa-button usa-button--secondary line-height-sans-2 padding-x-2 padding-y-1 font-ui-sm text-normal" href="app-result-selected-creditunion.html">Learn More</a>
                                                 </li>
                                             </ul>
                                         </td>
