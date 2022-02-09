@@ -38,6 +38,18 @@
                                     "type": "number",
                                     "prefix": "$"
                                 })
+
+                                @@include('input-file.html', {
+                                    "id": "business-tax",
+                                    "title": "Provide the last two years of tax returns",
+                                    "hint": "Both your personal and business tax returns for the year 2020 and 2019. You may also include 2021 tax returns, if available.<div class=\"height-1\"></div>The uploader accepts multiple documents at once."
+                                })
+
+                                @@include('input-file.html', {
+                                    "id": "business-bank-statement",
+                                    "title": "Provide the most recent bank statement",
+                                    "hint": "Your most recent bank statement for your business bank account. If your business has multiple banks or accounts, please provide the most recent statement for each. <div class=\"height-1\"></div>The uploader accepts multiple documents at once."
+                                })
                             </fieldset>
                             
                             <fieldset class="usa-fieldset margin-top-3">

@@ -1,0 +1,15 @@
+<div class="usa-form-group">
+    <label class="usa-label text-bold" for="@@id">
+        @@title
+        <abbr title="required" class="usa-hint usa-hint--required">*</abbr>
+    </label>
+    @@if (this.hint) { <div class="usa-hint" id="@@id-hint">@@hint</div> }
+    <input
+        id="@@id"
+        class="usa-file-input"
+        type="file"
+        name="@@id"
+        aria-describedby="file-input-multiple-hint"
+        multiple
+    />
+</div>

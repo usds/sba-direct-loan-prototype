@@ -68,8 +68,14 @@
                                     "title": "Your Relationship to the Business",
                                     "size": "3xl"
                                 })
+                            </fieldset>
 
-                                
+                            <fieldset class="usa-fieldset">
+                                @@include('input-file.html', {
+                                    "id": "applicant-id",
+                                    "title": "Provide your identification",
+                                    "hint": "For example: a passport, driver's license, etc. For a driver's license, please provide both front and back.<div class=\"height-1\"></div>The uploader accepts multiple documents at once."
+                                })
                             </fieldset>
 
                             <fieldset class="usa-fieldset margin-top-3">
