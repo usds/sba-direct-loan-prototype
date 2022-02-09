@@ -142,6 +142,38 @@
      <div class="usa-input-prefix" aria-hidden="true">$</div>  
     <input class="usa-input usa-input--md" id="business-profit" name="business-profit"   type="number"  required aria-required="true">
 </div>
+
+                                <div class="usa-form-group">
+    <label class="usa-label text-bold" for="business-tax">
+        Provide the last two years of tax returns
+        <abbr title="required" class="usa-hint usa-hint--required">*</abbr>
+    </label>
+     <div class="usa-hint" id="business-tax-hint">Both your personal and business tax returns for the year 2020 and 2019. You may also include 2021 tax returns, if available.<div class="height-1"></div>The uploader accepts multiple documents at once.</div> 
+    <input
+        id="business-tax"
+        class="usa-file-input"
+        type="file"
+        name="business-tax"
+        aria-describedby="file-input-multiple-hint"
+        multiple
+    />
+</div>
+
+                                <div class="usa-form-group">
+    <label class="usa-label text-bold" for="business-bank-statement">
+        Provide the most recent bank statement
+        <abbr title="required" class="usa-hint usa-hint--required">*</abbr>
+    </label>
+     <div class="usa-hint" id="business-bank-statement-hint">Your most recent bank statement for your business bank account. If your business has multiple banks or accounts, please provide the most recent statement for each. <div class="height-1"></div>The uploader accepts multiple documents at once.</div> 
+    <input
+        id="business-bank-statement"
+        class="usa-file-input"
+        type="file"
+        name="business-bank-statement"
+        aria-describedby="file-input-multiple-hint"
+        multiple
+    />
+</div>
                             </fieldset>
                             
                             <fieldset class="usa-fieldset margin-top-3">

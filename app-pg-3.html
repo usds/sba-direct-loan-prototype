@@ -192,8 +192,24 @@
      
     <input class="usa-input usa-input--3xl" id="applicant-relationship" name="applicant-relationship"  type="text"   required aria-required="true">
 </div>
+                            </fieldset>
 
-                                
+                            <fieldset class="usa-fieldset">
+                                <div class="usa-form-group">
+    <label class="usa-label text-bold" for="applicant-id">
+        Provide your identification
+        <abbr title="required" class="usa-hint usa-hint--required">*</abbr>
+    </label>
+     <div class="usa-hint" id="applicant-id-hint">For example: a passport, driver's license, etc. For a driver's license, please provide both front and back.<div class="height-1"></div>The uploader accepts multiple documents at once.</div> 
+    <input
+        id="applicant-id"
+        class="usa-file-input"
+        type="file"
+        name="applicant-id"
+        aria-describedby="file-input-multiple-hint"
+        multiple
+    />
+</div>
                             </fieldset>
 
                             <fieldset class="usa-fieldset margin-top-3">
